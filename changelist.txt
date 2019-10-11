@@ -1,0 +1,10 @@
+Task 1 - Removal of inconsistencies
+
+Inconsistency 1: Cheesy Vegetable Topping
+* Vegetable and cheese toppings were disjoint
+* Cheese Topping was set to not be disjoint from Vegetable Topping, and vice-versa, to validate the Cheesy Vegetable Topping
+
+Inconsistency 2: Ice Cream
+* Had assigned "hasTopping some FruitTopping", which implied that any topping could’ve been applied.
+* hasTopping only accepts all toppings in the Pizza class. IceCream is not part of the Pizza class
+* Setting The IceCream subclass to "hasTopping only FruitTopping" implies that IceCream can only have a FruitTopping, and nothing else.
