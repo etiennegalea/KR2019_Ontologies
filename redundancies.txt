@@ -1,15 +1,19 @@
 Task 2 - Redundancies
 
-Redundancy 1: VegetarianPizzaEquivalent(1/2)
-* There are three definitions of Vegetarian Pizzas, all with the same conditions defined in different ways.
-* The simplest one is VegetarianPizza
-* The rest use a method of implementing the logic which can be deemed more complicated, but are equivalent.
+Redundancy 1: VegetarianPizzaEquivalent1
+* This is identical to VegetarianPizzaEquivalent2, which makes use of the VegetarianTopping class, despite VegetarianTopping statement being identical to VegetarianPizzaEquivalent1.
 
 Redundancy 2: Vegetarian Pizza Topping
 * This is an extension of Redundancy 1. This class is only Used by VegetarianPizzaEquivalent1. Vegetarian Pizza Topping is identical to the constraints of VegetarianPizzaEquivalent2, making this class redundant.
 
-Redundancy 3: SpicyPizza
+Redundancy 3: VegetarianPizza
+* The only purpose of this class is to provide a negation statement to NonVegetarianPizza. 
+* Removing this class and setting the negated statement to NonVegetarianPizza will render VegetarianPizza Redundant. 
+* VegetarianPizza is also a more generalised version of VegetarianPizzaEquivalent2.
+
+Redundancy 4: SpicyPizza
 * This is equivalent to SpicyPizzaEquivalent, with the difference that SpicyPizza makes use of the redundant SpicyTopping
 
-Redundancy 4: SpicyTopping
+Redundancy 5: SpicyTopping
 * Identical statement to the definition in SpicyPizzaEquivalent, making it redundant as its only use is by SpicyPizza
+

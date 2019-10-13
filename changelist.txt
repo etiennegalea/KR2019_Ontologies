@@ -8,3 +8,7 @@ Inconsistency 2: Ice Cream
 * Had assigned "hasTopping some FruitTopping", which implied that any topping could’ve been applied.
 * hasTopping only accepts all toppings in the Pizza class. IceCream is not part of the Pizza class
 * Setting The IceCream subclass to "hasTopping only FruitTopping" implies that IceCream can only have a FruitTopping, and nothing else.
+
+
+UNCERTAIN:
+Pizza: do we modify the definition of PizzaBase to an equivalent statement or do we leave it as a subclass?
