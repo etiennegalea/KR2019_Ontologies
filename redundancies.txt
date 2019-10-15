@@ -11,3 +11,5 @@ Redundancy 2: VegetarianPizza
 Redundancy 3: SpicyPizzaEquivalent
 * This is equivalent to SpicyPizza, with the difference that SpicyPizzaEquivalent uses the logic already defined in SpicyTopping, rather than implementing it directly, rendering this class redundant.
 
+Redundancy 4: Spiciness Equivalence (Hot or Medium or Mild)
+* Spiciness is equivalent to Hot or Medium or Mild. This equivalence is redundant as Hot, Medium and Mild are already a subclass of Spiciness.
