@@ -13,3 +13,9 @@ Redundancy 3: SpicyPizzaEquivalent
 
 Redundancy 4: Spiciness Equivalence (Hot or Medium or Mild)
 * Spiciness is equivalent to Hot or Medium or Mild. This equivalence is redundant as Hot, Medium and Mild are already a subclass of Spiciness.
+
+Redundancy 5: NamedPizza
+* NamedPizza is not defining any new logic which specifies what should be classified as a NamedPizza.
+* All the classes under NamedPizza therefore can be a direct subset of Pizza, as they are not getting any new logic with this class, other than any logic which is already defined under Pizza.
+
+Redundancy 6: 
