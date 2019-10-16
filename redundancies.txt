@@ -1,19 +1,29 @@
-Task 2 - Redundancies
+Task 2 - Redundancies found
 
 Redundancy 1: VegetarianPizzaEquivalent2
 * This is identical to VegetarianPizzaEquivalent1, which defines the already-existing logic in VegetarianTopping, making this statement redundant.
 
 Redundancy 2: VegetarianPizza
 * The only purpose of this class is to provide a negation statement to NonVegetarianPizza. 
-* Removing this class and setting the negated statement to NonVegetarianPizza will render VegetarianPizza Redundant. 
-* VegetarianPizza does not indicate what toppings make a vegetarian Pizza, its logic only states that a vegetarian pizza should not have seafood or meat. We do not have any indicaion if it includes vegetarian toppings.
+* VegetarianPizza does not indicate what toppings make a vegetarian Pizza, its logic only states that a vegetarian pizza should not have seafood or meat. We do not have any indication if it includes vegetarian toppings.
+* Removing this class and setting the negated statement to NonVegetarianPizza will render VegetarianPizza redundant.
 
 Redundancy 3: SpicyPizzaEquivalent
 * This is equivalent to SpicyPizza, with the difference that SpicyPizzaEquivalent uses the logic already defined in SpicyTopping, rather than implementing it directly, rendering this class redundant.
 
 Redundancy 4: Spiciness Equivalence (Hot or Medium or Mild)
-* Spiciness is equivalent to Hot or Medium or Mild. This equivalence is redundant as Hot, Medium and Mild are already a subclass of Spiciness.
+* Spiciness is equivalent to Hot or Medium or Mild. This statement is redundant as Hot, Medium and Mild are already in the subclass of Spiciness.
 
 Redundancy 5: NamedPizza
-* NamedPizza is not defining any new logic which specifies what should be classified as a NamedPizza.
-* All the classes under NamedPizza therefore can be a direct subset of Pizza, as they are not getting any new logic with this class, other than any logic which is already defined under Pizza.
+* The NamedPizza class is equivalent to the Pizza class, and a subclass of Pizza itself, therefore NamedPizza is redundant.
+
+Redundancy 6: RealItalianPizza
+* ThinAndCrispyPizza is defined as "hasBase only ThinAndCrispyBase". RealItalianPizza is partially defined as the same. Therefore, RealItalian pizza is partially redundant as it could be defined as just "ThinAndCrispyPizza".
+
+
+Task 3 - New Redundancies
+
+
+Redundancy 1: DisgustingPizza
+* DisgustingPizza class is redundant since it is partially inferring the logic of the Margherita class, where it can just use the definition of Margherita.
+
