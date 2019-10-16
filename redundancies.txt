@@ -6,7 +6,7 @@ Redundancy 1: VegetarianPizzaEquivalent2
 Redundancy 2: VegetarianPizza
 * The only purpose of this class is to provide a negation statement to NonVegetarianPizza. 
 * Removing this class and setting the negated statement to NonVegetarianPizza will render VegetarianPizza Redundant. 
-* VegetarianPizza is also a more generalised version of VegetarianPizzaEquivalent2.
+* VegetarianPizza does not indicate what toppings make a vegetarian Pizza, its logic only states that a vegetarian pizza should not have seafood or meat. We do not have any indicaion if it includes vegetarian toppings.
 
 Redundancy 3: SpicyPizzaEquivalent
 * This is equivalent to SpicyPizza, with the difference that SpicyPizzaEquivalent uses the logic already defined in SpicyTopping, rather than implementing it directly, rendering this class redundant.
@@ -17,5 +17,3 @@ Redundancy 4: Spiciness Equivalence (Hot or Medium or Mild)
 Redundancy 5: NamedPizza
 * NamedPizza is not defining any new logic which specifies what should be classified as a NamedPizza.
 * All the classes under NamedPizza therefore can be a direct subset of Pizza, as they are not getting any new logic with this class, other than any logic which is already defined under Pizza.
-
-Redundancy 6: 
