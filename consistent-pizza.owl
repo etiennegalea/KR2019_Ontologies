@@ -1786,7 +1786,7 @@ v1.4. Added Food class (used in domain/range of hasIngredient), Added several ha
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Pizza</rdfs:label>
